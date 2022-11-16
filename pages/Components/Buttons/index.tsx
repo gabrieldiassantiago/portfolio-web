@@ -11,13 +11,13 @@ export default function Botoes () {
     return (
         <div className={styles.container}>
            <div className={styles.caixas}>
-            <a href=""> <Image className={styles.iconredesocial} src={facebooklogo} alt="seta" />Facebook 
+            <a href="https://www.facebook.com/gabrieldiassantiago09/"> <Image className={styles.iconredesocial} src={facebooklogo} alt="seta" />Facebook 
             <Image className={styles.iconseta} src={seta} alt="seta" /></a>
-            <a href=""> <Image className={styles.iconredesocial} src={instagram} alt="seta" />Instagram 
+            <a href="https://www.instagram.com/_dias17y/"> <Image className={styles.iconredesocial} src={instagram} alt="seta" />Instagram 
             <Image className={styles.iconseta} src={seta} alt="seta" /></a>
-            <a href=""> <Image className={styles.iconredesocial} src={whats} alt="seta" />WhatsApp 
+            <a href="https://wa.me/5512981668260"> <Image className={styles.iconredesocial} src={whats} alt="seta" />WhatsApp 
             <Image className={styles.iconseta} src={seta} alt="seta" /></a>
-            <a href=""> <Image className={styles.iconredesocial} src={github} alt="seta" />Github 
+            <a href="https://github.com/gabrieldiassantiago"> <Image className={styles.iconredesocial} src={github} alt="seta" />Github 
             <Image className={styles.iconseta} src={seta} alt="seta" /></a>
            </div>
             </div>
