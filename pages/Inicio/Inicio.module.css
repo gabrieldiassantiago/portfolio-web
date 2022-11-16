@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+}
+.container > .imagem {
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.container > .saudacoes {
+    color: black;
+    margin: 0 auto;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 29px;
+}
+.container span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 26px;
+    color: black;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    padding: 2px;
+    font-weight: 550;
+    font-size: 15px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+.redesosociais {
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+.redesosociais > .iconredes {
+    margin: 20px 20px;
+}
+.acessarlinks {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: black;
+    color: rgb(85, 87, 97);
+}
