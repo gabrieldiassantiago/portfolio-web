@@ -1,5 +1,5 @@
 import styles from './Inicio.module.css'
-import gabriel from '../assets/gabriel.webp';
+import gabriel from '../assets/gab.jpg';
 import Image from 'next/image'
 import Botoes from '../Components/Buttons';
 import figma from '../assets/figma.svg';
@@ -10,7 +10,7 @@ import DarkModeToggle from '../Components/darkmode/DarkModeToggle';
 import '../Components/darkmode/DarkModeToggle.module.css'
 import {FiFacebook, FiFigma, FiInstagram} from 'react-icons/fi'
 import {BsFacebook, BsWhatsapp} from 'react-icons/bs'
-
+import CustomHead from '../../head';
 
 export const handleGithubClick = () => {
   window.open('https://www.facebook.com/gabrieldiassantiago09/', '_blank');
@@ -29,9 +29,9 @@ export const handleWhatsClick = () => {
 export default function Inicio () {
     return (
        <div className={styles.container}>
-
+          <CustomHead />
         <Image className={styles.imagem} src={gabriel} alt="imagem" />
-        <h1 className={styles.saudacoes}>Olá,</h1>
+        <h1 className={styles.saudacoes}>Olá, eu sou</h1>
         <span>Um designer e programador que ama ilustrar, codar e criar coisas incríveis através do código</span>
         <div className={styles.redesosociais}>
         <FiFacebook color='black' size={25} style={{cursor: 'pointer'}} onClick={handleGithubClick} />
