@@ -5,34 +5,41 @@ import Botoes from '../Components/Buttons';
 import figma from '../assets/figma.svg';
 import linkdin from '../assets/linkdin.svg';
 import twitter from '../assets/twitter.svg';
+import React, { useState } from 'react';
+import DarkModeToggle from '../Components/darkmode/DarkModeToggle';
+import '../Components/darkmode/DarkModeToggle.module.css'
+import {FiFacebook, FiFigma, FiInstagram} from 'react-icons/fi'
+import {BsFacebook, BsWhatsapp} from 'react-icons/bs'
 
 
+export const handleGithubClick = () => {
+  window.open('https://www.facebook.com/gabrieldiassantiago09/', '_blank');
+};
 
-    
-const greetingMessage = () => {
-    let h = new Date().getHours();
-    switch (true) {
-      case h < 5: return 'Boa madrugada';
-      case h < 12: return 'Bom dia';
-      case h < 18: return 'Boa tarde';
-      default: return 'Boa noite';
-    }      
-  }
-  
+export const handleInstagramClick = () => {
+  window.open('https://www.instagram.com/_dias17y/')
+}
+
+export const handleWhatsClick = () => {
+  window.open('https://api.whatsapp.com/send?phone=5512991663075')
+}
+
 
 
 export default function Inicio () {
     return (
        <div className={styles.container}>
+
         <Image className={styles.imagem} src={gabriel} alt="imagem" />
-        <h1 className={styles.saudacoes}>Olá, {greetingMessage()}</h1>
+        <h1 className={styles.saudacoes}>Olá,</h1>
         <span>Um designer e programador que ama ilustrar, codar e criar coisas incríveis através do código</span>
         <div className={styles.redesosociais}>
-          <Image className={styles.iconredes} src={figma} alt="figma" />
-          <Image className={styles.iconredes} src={linkdin} alt="figma" />
-          <Image className={styles.iconredes} src={twitter} alt="figma" /> <br></br>
-          <h2 className={styles.acessarlinks}>Acesse meus links</h2>
+        <FiFacebook color='black' size={25} style={{cursor: 'pointer'}} onClick={handleGithubClick} />
+        <FiInstagram color='black' size={25} onClick={handleInstagramClick} style={{cursor: 'pointer'}} />
+        <BsWhatsapp  color='black' size={25} onClick={handleWhatsClick} style={{cursor: 'pointer'}}/>
         </div>
+        <h2 className={styles.acessarlinks}>Acesse meus links</h2>
+
         <Botoes />
        </div>
     )
