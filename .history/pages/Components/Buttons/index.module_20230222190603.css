@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 .container{
+    margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    justify-content: center;
 }
 .container > .caixas > a {
     color: black;

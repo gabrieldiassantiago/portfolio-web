@@ -5,7 +5,6 @@
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    justify-content: center;
 }
 .container > .caixas > a {
     color: black;

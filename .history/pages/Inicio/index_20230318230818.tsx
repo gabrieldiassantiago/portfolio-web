@@ -1,5 +1,5 @@
 import styles from './Inicio.module.css'
-import gabriel from '../assets/avatar2.png';
+import gabriel from '../assets/gab.jpg';
 import Image from 'next/image'
 import Botoes from '../Components/Buttons';
 import figma from '../assets/figma.svg';

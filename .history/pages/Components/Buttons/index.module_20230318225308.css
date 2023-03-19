@@ -32,6 +32,10 @@
         width: 320px;
         height: 60px;
     }
+    .container {
+        margin: 0 auto;
+        width: 100vh;
+    }
 }
 
 .container > .caixas :hover {

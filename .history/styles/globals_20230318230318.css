@@ -20,7 +20,5 @@ a {
     color-scheme: dark;
   }
   body {
-    background: rgb(41, 27, 148);
-  
-  }
+    background: linear-gradient(#151415, #404040);  }
 }

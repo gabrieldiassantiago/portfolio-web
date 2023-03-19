@@ -1,5 +1,5 @@
 import styles from './Inicio.module.css'
-import gabriel from '../assets/avatar2.png';
+import gabriel from '../assets/gab.jpg';
 import Image from 'next/image'
 import Botoes from '../Components/Buttons';
 import figma from '../assets/figma.svg';
@@ -31,17 +31,14 @@ export default function Inicio () {
        <div className={styles.container}>
           <CustomHead />
         <Image className={styles.imagem} src={gabriel} alt="imagem" />
+        <h1>Olá</h1>
        <div className={styles.topo}>
-        <h1 className={styles.texto}>
-          Gabriel Dias Santiago
-
-        </h1>
         <span className={styles.text}>Um designer e programador que ama ilustrar, codar e criar coisas incríveis através do código</span>
        </div>
         <div className={styles.redesosociais}>
-        <FiFacebook color='white' size={25} style={{cursor: 'pointer'}} onClick={handleGithubClick} />
-        <FiInstagram color='white' size={25} onClick={handleInstagramClick} style={{cursor: 'pointer'}} />
-        <BsWhatsapp  color='white' size={25} onClick={handleWhatsClick} style={{cursor: 'pointer'}}/>
+        <FiFacebook color='black' size={25} style={{cursor: 'pointer'}} onClick={handleGithubClick} />
+        <FiInstagram color='black' size={25} onClick={handleInstagramClick} style={{cursor: 'pointer'}} />
+        <BsWhatsapp  color='black' size={25} onClick={handleWhatsClick} style={{cursor: 'pointer'}}/>
         </div>
         <h2 className={styles.acessarlinks}>Acesse meus links</h2>
 
