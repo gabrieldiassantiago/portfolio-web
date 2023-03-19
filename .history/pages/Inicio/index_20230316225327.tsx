@@ -31,10 +31,7 @@ export default function Inicio () {
        <div className={styles.container}>
           <CustomHead />
         <Image className={styles.imagem} src={gabriel} alt="imagem" />
-       <div className={styles.topo}>
-       <h1 className={styles.saudacoes}>Olá, eu sou</h1>
-        <span className={styles.text}>Um designer e programador que ama ilustrar, codar e criar coisas incríveis através do código</span>
-       </div>
+       <div className={styles.topo}
         <div className={styles.redesosociais}>
         <FiFacebook color='black' size={25} style={{cursor: 'pointer'}} onClick={handleGithubClick} />
         <FiInstagram color='black' size={25} onClick={handleInstagramClick} style={{cursor: 'pointer'}} />
